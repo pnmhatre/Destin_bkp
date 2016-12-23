@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42376D</color>
+    <color name="colorPrimaryDark">#0A1835</color>
+    <color name="colorAccent">#D73D61</color>
+
+    <color name="light_violet">#453870</color>
+
+    <color name="green">#99cc00</color>
+    <color name="white_t">#80ffffff</color>
+    <color name="edtextColor">#000</color>
+    <color name="radiobtn_txtColor">#000</color>
+    <color name="transperant_white">#ccffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="splash_color">#26C7DB</color>
+</resources>

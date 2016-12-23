@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/searchbar_back">
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                 />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+   </FrameLayout>
+
+</LinearLayout>

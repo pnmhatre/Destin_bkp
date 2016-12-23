@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="170dp"
+android:padding="8dp"
+android:background="#eee">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/imgType"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_car"
+        android:tint="@android:color/holo_blue_light"/>
+    <TextView
+    android:id="@+id/tv_id_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="id"
+    android:textStyle="bold"
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:padding="3dp"/>
+<TextView
+    android:id="@+id/tv_name_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="name :: "
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:padding="3dp"
+    android:layout_below="@+id/tv_id_1"/>
+<TextView
+    android:id="@+id/tv_address_1"
+    android:layout_below="@+id/tv_name_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Address :: 88888888"
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:padding="3dp"/>
+<TextView
+    android:id="@+id/tv_lat_1"
+    android:layout_below="@+id/tv_address_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lat :: 11.11111"
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:padding="3dp"/>
+<TextView
+    android:id="@+id/tv_lon_1"
+    android:layout_below="@+id/tv_address_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lon :: 22.22222"
+    android:layout_alignParentRight="true"
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:background="#fff"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:padding="3dp"/>
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:checked="false"/>
+
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_recycle"
+        android:tint="@android:color/holo_red_light"/>
+</RelativeLayout>
+</RelativeLayout>
